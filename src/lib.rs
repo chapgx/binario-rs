@@ -1,14 +1,16 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub enum Types {
+    I8, // i8
+    I16,
+    I32,
+    I64,
+    I128,
+    Int,
+    U8,
+    U16,
+    U32,
+    U64,
+    U128,
+    String,  // string
+    Boolean, // boolean
+    Rune,    // rune
 }
